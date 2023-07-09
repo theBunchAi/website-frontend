@@ -1,0 +1,32 @@
+.home-cta {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh 0;
+  color: var(--font-color);
+  background-color: var(--bg-color-purple-light);
+  .cta-heading {
+    font-size: 4vw;
+    font-weight: 400;
+    font-family: var(--header-font);
+    word-spacing: 10px;
+  }
+  .cta-para {
+    text-align: center;
+    margin-bottom: 2vh;
+    font-size: var(--font-size);
+    width: 40%;
+  }
+  .cta-btn {
+    display: block;
+    background-color: var(--btn-color);
+    font-size: var(--font-size);
+    border-radius: 7.5px;
+    color: inherit;
+    text-decoration: none;
+    padding: 0.5em 1em;
+  }
+}

@@ -1,0 +1,53 @@
+.header {
+  width: fit-content;
+  height: var(--header-height);
+  background-color: var(--glass-color);
+  position: fixed;
+  top: 80vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 50px;
+  border-radius: 15px;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  &.active {
+    background-color: red;
+    bottom: var(--footer-height);
+    transform: translate(-50%, 150%);
+  }
+  .logo-container {
+    height: 40px;
+    width: 40px;
+    .logo {
+      object-fit: contain;
+    }
+  }
+  .nav {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    .nav-links {
+      color: var(--font-color);
+      font-size: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      animation-name: fade-in;
+      animation-duration: 1.5s;
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+          transform: translateY(-15px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}

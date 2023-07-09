@@ -1,9 +1,20 @@
-//global variables
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Monoton&display=swap");
 
 :root {
-  //if you want css variables
-  --some-variable-here: "some value here";
-}
+  --header-height: 12.5vh;
+  --footer-height: 800px;
+  --font-size: 1.4rem;
 
-// if you want scss variables
-$some-variable-here: "some value here";
+  --font-color: white;
+  --bg-color-purple: #480ca8;
+  --bg-color-purple-light: #560bad;
+  --bg-color-violet: #7209b7;
+  --bg-color-pink: #b5179e;
+  --glass-color: rgba(54, 54, 54, 0.25);
+  --btn-color: #4361ee;
+
+  --common-font: "Inter", sans-serif;
+  --header-font: "Monoton", cursive;
+
+  --transition-values: all 0.5s ease;
+}
