@@ -33,7 +33,7 @@ export default function Header() {
         <Link href="/" className="nav-links">
           Home
         </Link>
-        <Link href="/" className="nav-links">
+        <Link href="/events" className="nav-links">
           Events
         </Link>
         <Link href="/" className="nav-links">

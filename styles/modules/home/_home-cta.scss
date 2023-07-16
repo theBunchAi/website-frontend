@@ -10,9 +10,7 @@
   background-color: var(--bg-color-purple-light);
   .cta-heading {
     font-size: 4vw;
-    font-weight: 400;
-    font-family: var(--header-font);
-    word-spacing: 10px;
+    @include header-font;
   }
   .cta-para {
     text-align: center;
@@ -22,7 +20,7 @@
   }
   .cta-btn {
     display: block;
-    background-color: var(--btn-color);
+    background-color: var(--bg-color-blue);
     font-size: var(--font-size);
     border-radius: 7.5px;
     color: inherit;

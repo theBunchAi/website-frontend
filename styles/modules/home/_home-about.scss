@@ -22,9 +22,9 @@
     padding-left: 5vw;
     color: var(--font-color);
     .about-header {
-      font-family: var(--header-font);
-      font-weight: 400;
       font-size: 4rem;
+      @include header-font;
+
       word-spacing: 10px;
     }
     .about-info {
@@ -36,7 +36,7 @@
       display: flex;
       justify-content: space-between;
       .about-cards {
-        border: 2px solid var(--btn-color);
+        border: 2px solid var(--bg-color-blue);
         border-radius: 10px;
         padding: 20px;
         display: flex;

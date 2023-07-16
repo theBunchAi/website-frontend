@@ -1,5 +1,4 @@
-.landing {
-  height: 100vh;
+.page-heading-sec {
   background-color: var(--bg-color-pink);
   width: 100%;
   position: relative;
@@ -13,7 +12,7 @@
     position: absolute;
     animation-name: grow;
     animation-duration: 0.75s;
-    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+    animation-timing-function: linear;
 
     .bg-img {
       object-fit: contain;
@@ -32,7 +31,7 @@
     z-index: 1;
     animation-name: shrink;
     animation-duration: 0.75s;
-    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+    animation-timing-function: linear;
     @keyframes shrink {
       0% {
         scale: 1.5;
@@ -43,9 +42,7 @@
     }
     .company-heading {
       color: var(--font-color);
-      font-size: 12.5vw;
-      font-family: var(--header-font);
-      font-weight: 500;
+      @include header-font;
       text-transform: uppercase;
       word-spacing: 0.5em;
     }

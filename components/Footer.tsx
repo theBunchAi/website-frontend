@@ -16,7 +16,6 @@ export default function Footer() {
       const docHeight = document.body.scrollHeight;
       const num = footerRef.current?.clientHeight;
       const diff = docHeight - (num ?? 0) + 50;
-      console.log("foot", footerRef.current?.clientHeight);
       headerRef.current.style.setProperty("position", "absolute");
       headerRef.current.style.setProperty("top", `${diff}px`);
     }

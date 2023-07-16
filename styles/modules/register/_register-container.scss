@@ -1,0 +1,11 @@
+@import "./register-form";
+.register-container {
+  overflow: hidden;
+  .form-body {
+    padding: 10vh 0;
+    background-color: var(--bg-color-purple-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

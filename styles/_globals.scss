@@ -13,3 +13,10 @@
     width: 100%;
   }
 }
+
+@mixin header-font {
+  font-family: var(--header-font);
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  font-weight: 400;
+}
