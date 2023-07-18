@@ -1,10 +1,27 @@
+import { useRef, type FormEventHandler } from "react";
 import Image from "next/image";
+import useForm from "@/hooks/use-form";
 
 export default function RegisterForm({ eventName }: { eventName: string }) {
-  const submitHandler = (e: any) => {
-    e.preventDefault();
-    console.log("works");
+  const formRef = useRef<HTMLFormElement>(null);
+  const googleSubmit = useForm({
+    formRef: formRef,
+    gFormId: "1xr28zjlJvmfVKtgNW44fqXb4UI2rZUkxbnzFClnTFHg",
+    links: [
+      { entryId: "1759689869", formId: "name" },
+      { entryId: "1859042591", formId: "mail" },
+      { entryId: "1651948340", formId: "number" },
+    ],
+    extraEntries: [{ entryId: "237604300", value: eventName }],
+  });
+
+  const submitHandler: FormEventHandler = (event) => {
+    event.preventDefault();
+    const targets: HTMLInputElement[] = Array.from(event.target as any);
+    googleSubmit();
+    console.log(targets);
   };
+
   return (
     <div className="form-container">
       <div className="img-container form-img-container">
@@ -17,8 +34,8 @@ export default function RegisterForm({ eventName }: { eventName: string }) {
           className="form-img"
         />
       </div>
-      <form id="reg-form" onSubmit={submitHandler}>
-        <h2 className="form-heading">Fill in appropriately</h2>
+      <form id="reg-form" onSubmit={submitHandler} ref={formRef}>
+        <h2 className="form-heading">Provide your details</h2>
         <label htmlFor="name" className="label-text">
           Name
         </label>
@@ -27,6 +44,7 @@ export default function RegisterForm({ eventName }: { eventName: string }) {
           name="name"
           placeholder="Your name"
           id="name"
+          required
         ></input>
         <label htmlFor="mail" className="label-text">
           Mail Address
@@ -36,6 +54,7 @@ export default function RegisterForm({ eventName }: { eventName: string }) {
           name="mail"
           placeholder="Your mail"
           id="mail"
+          required
         ></input>
         <label htmlFor="number" className="label-text">
           Phone Number
@@ -45,9 +64,10 @@ export default function RegisterForm({ eventName }: { eventName: string }) {
           name="phone number"
           placeholder="Your number"
           id="number"
+          required
         ></input>
-        <label htmlFor="" className="checkbox">
-          <input type="checkbox" />
+        <label htmlFor="" className="checkbox label-text">
+          <input type="checkbox" required />
           <span>I agree to share all my details</span>
         </label>
         <button type="submit" className="reg-btn">

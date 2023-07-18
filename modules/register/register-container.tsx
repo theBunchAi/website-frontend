@@ -8,7 +8,15 @@ export default function RegisterContainer({
 }) {
   return (
     <div className="register-container">
-      <PageHeading text="Register" height="40vh" fontSize="8rem" />
+      <PageHeading
+        text="Register"
+        height="40vh"
+        heightMed="40vh"
+        heightSmall="40vh"
+        fontSize="8rem"
+        fontSizeMed="6rem"
+        fontSizeSmall="20vw"
+      />
       <div className="form-body">
         <RegisterForm eventName={eventName} />
       </div>

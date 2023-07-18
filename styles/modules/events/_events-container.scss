@@ -1,5 +1,4 @@
 @import "./event-card";
-
 .event-cards-container {
   background-color: var(--bg-color-purple-light);
   width: 100%;
@@ -7,4 +6,7 @@
   grid-template-columns: 1fr 1fr;
   padding: 10vh 0;
   row-gap: 4vh;
+  @media only screen and (max-width: 1900px) {
+    grid-template-columns: 1fr;
+  }
 }

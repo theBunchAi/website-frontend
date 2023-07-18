@@ -3,11 +3,20 @@ import Faq from "./faq";
 import HomeAbout from "./home-about";
 import HomeCards from "./home-cards";
 import HomeCta from "./home-cta";
+import { companyName } from "@/common-data";
 
 export default function HomeContainer() {
   return (
     <>
-      <PageHeading text="The Bunch" height="100vh" fontSize="12.5vw" />
+      <PageHeading
+        text={companyName}
+        height="100vh"
+        heightMed="100vh"
+        heightSmall="80vh"
+        fontSize="12.5vw"
+        fontSizeMed="18vw"
+        fontSizeSmall="20vw"
+      />
       <HomeAbout />
       <HomeCta />
       <HomeCards />

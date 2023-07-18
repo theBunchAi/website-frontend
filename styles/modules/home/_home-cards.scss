@@ -67,4 +67,36 @@
       }
     }
   }
+  @media only screen and (max-width: 1200px) {
+    padding: 10vh 2vw;
+  }
+  @media only screen and (max-width: 900px) {
+    --x-shift: 0;
+    .info-card {
+      flex-direction: column;
+      &:nth-child(even) {
+        .cards-img-container {
+          order: 0;
+        }
+      }
+      .text-container {
+        text-align: center;
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    --font-size: 1rem;
+    .info-card {
+      .cards-img-container {
+        width: 95%;
+        height: fit-content;
+        aspect-ratio: 1 / 1;
+      }
+      .text-container {
+        .info-card-header {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
 }

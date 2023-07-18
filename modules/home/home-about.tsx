@@ -5,6 +5,7 @@ import {
   BsPeopleFill,
 } from "react-icons/bs";
 import type { IconType } from "react-icons/lib";
+import { aboutDescription, aboutHeader } from "./home-data";
 
 interface CardsType {
   Icon: IconType;
@@ -40,13 +41,8 @@ export default function HomeAbout() {
         />
       </div>
       <div className="about-info-container">
-        <h2 className="about-header">Join the exclusive club</h2>
-        <p className="about-info">
-          Tired of dull weekends and boring nights? TheBunch.ai helps you
-          connect with like-minded individuals and participate in exclusive
-          social events organized in your city! Be part of the coolest social
-          scene ever.
-        </p>
+        <h2 className="about-header">{aboutHeader}</h2>
+        <p className="about-info">{aboutDescription}</p>
         <div className="about-cards-container">
           {aboutCardsInfo.map((data, index: number) => {
             const { Icon } = data;

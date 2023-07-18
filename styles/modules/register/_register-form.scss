@@ -3,7 +3,6 @@
   display: flex;
   width: 70%;
   border: 1px solid black;
-
   .form-img-container {
     width: 50%;
     aspect-ratio: 1;
@@ -18,18 +17,17 @@
     padding: 3em;
     justify-content: center;
     background-color: black;
-
     .form-heading {
       color: var(--label-color);
-      font-size: 2.4rem;
+      font-size: 2vw;
       margin-bottom: 2vh;
       @include header-font;
     }
     .label-text {
-      font-size: var(--font-size);
+      font-size: 1rem;
       margin-bottom: 5px;
-      margin-top: 1.25vh;
-      font-weight: 600;
+      margin-top: 2vh;
+      font-weight: 400;
       color: var(--label-color);
       width: fit-content;
       &::selection {
@@ -40,24 +38,23 @@
   input {
     background-color: transparent;
     padding: 10px;
-    border-radius: 7.5px;
-    padding-top: 5px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     border: 1px solid var(--label-color);
     caret-color: var(--label-color);
-    font-size: var(--font-size);
+    font-size: 1rem;
     transition: all 0.3s ease;
-    font-weight: 600;
+    font-weight: 400;
     color: var(--font-color);
     &::placeholder {
-      font-size: 1rem;
+      font-size: 0.85rem;
       color: var(--placeholder-color);
     }
     &:focus {
       outline: none;
-      border: 1px solid var(--bg-color-violet);
-      background-color: var(--bg-color-violet);
+      border: 1px solid var(--bg-color-purple-light);
+      background-color: var(--bg-color-purple-light);
     }
 
     &[type="checkbox"] {
@@ -72,12 +69,12 @@
     font-size: 1.25rem;
   }
   .reg-btn {
-    font-size: var(--font-size);
+    font-size: 1rem;
     background-color: var(--bg-color-purple-light);
     border: none;
     cursor: pointer;
     width: fit-content;
-    padding: 0.5em 2em;
+    padding: 0.75em 2.5em;
     font-weight: 700;
     border-radius: 5px;
     color: var(--label-color);
@@ -88,6 +85,35 @@
     }
     &:active {
       scale: 0.9;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    .form-img-container {
+      width: 100%;
+    }
+    #reg-form {
+      width: 100%;
+      .form-heading {
+        font-size: 5vw;
+      }
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    .form-img-container {
+      width: 100%;
+    }
+    #reg-form {
+      padding: 15px 25px;
+      width: 100%;
+      .form-heading {
+        font-size: 6.5vw;
+      }
     }
   }
 }

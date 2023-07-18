@@ -4,6 +4,8 @@ import gqlclient from "@/gql/client";
 import { briefEventData } from "@/gql/queries";
 import type { BriefEventType } from "@/types/pages/event";
 import EventsContainer from "@/modules/events/events-container";
+import Head from "next/head";
+import { companyName, description } from "@/common-data";
 
 export const getStaticProps: GetStaticProps = async () => {
   const eventDataObj: Record<string, any> = await gqlclient.request(
@@ -19,8 +21,14 @@ export const getStaticProps: GetStaticProps = async () => {
 
 export default function Event({ eventData }: BriefEventType) {
   return (
-    <section className="events">
-      <EventsContainer eventData={eventData} />
-    </section>
+    <>
+      <Head>
+        <title>{`Events | ${companyName}`}</title>
+        <meta name="description" content={description} />
+      </Head>
+      <section className="events">
+        <EventsContainer eventData={eventData} />
+      </section>
+    </>
   );
 }

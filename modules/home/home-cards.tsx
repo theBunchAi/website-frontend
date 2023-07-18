@@ -1,13 +1,6 @@
 import { useEffect, useRef, useCallback } from "react";
 import Image from "next/image";
-
-interface HomeCardsType {
-  imgSrc: string;
-  alt: string;
-  heading: string;
-  text: string;
-}
-[];
+import { homeCardsData } from "./home-data";
 
 export default function HomeCards() {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -67,23 +60,9 @@ export default function HomeCards() {
     };
   }, [observerCallback]);
 
-  const cardsData: HomeCardsType[] = [
-    {
-      imgSrc: "/assets/images/dummy.jpg",
-      alt: "dummy",
-      heading: "From Casual Mixers to Themed Parties – Never A Dull Moment!",
-      text: "We’ve got an event for everyone. Connect with fellow foodies, game-lovers, outdoor enthusiasts, and more!",
-    },
-    {
-      imgSrc: "/assets/images/dummy.jpg",
-      alt: "dummy",
-      heading: "Quality Over Quantity: Handpicked Social Events and Activities",
-      text: "Say goodbye to overcrowded meetups. We prioritize well-curated events for a better social experience.",
-    },
-  ];
   return (
     <section className="home-cards" ref={containerRef}>
-      {cardsData.map((data, index: number) => {
+      {homeCardsData.map((data, index: number) => {
         return (
           <div className="info-card" key={index}>
             <div className="cards-img-container img-container">

@@ -6,7 +6,6 @@ export const briefEventData = gql`
       items {
         eventName
         eventDate
-        smallDescription
         longDescription
         venue
         time

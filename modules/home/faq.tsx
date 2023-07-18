@@ -1,22 +1,6 @@
-interface FaqDataType {
-  question: string;
-  answer: string;
-}
-[];
+import { faqData } from "./home-data";
 
 export default function Faq() {
-  const faqData: FaqDataType[] = [
-    {
-      question: "Why should I join TheBunch.ai?",
-      answer:
-        "TheBunch.ai aims to bring like-minded people together for exceptional social experiences, forming friendships and creating memories.",
-    },
-    {
-      question: "How are the events organized?",
-      answer:
-        "The events are organized by our creative team in collaboration with local partners for an authentic experience.",
-    },
-  ];
   return (
     <section className="faq">
       <h2 className="faq-header">Faqs</h2>

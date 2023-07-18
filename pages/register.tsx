@@ -1,4 +1,6 @@
+import { companyName, description } from "@/common-data";
 import RegisterContainer from "@/modules/register/register-container";
+import Head from "next/head";
 import { useRouter } from "next/router";
 
 export default function Register() {
@@ -8,8 +10,14 @@ export default function Register() {
     return <span>Error</span>;
   }
   return (
-    <section id="register">
-      <RegisterContainer eventName={eventName} />
-    </section>
+    <>
+      <Head>
+        <title>{`Register | ${companyName}`}</title>
+        <meta name="description" content={description} />
+      </Head>
+      <section id="register">
+        <RegisterContainer eventName={eventName} />
+      </section>
+    </>
   );
 }

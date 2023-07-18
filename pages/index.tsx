@@ -1,9 +1,17 @@
+import { companyName, description } from "@/common-data";
 import HomeContainer from "@/modules/home/home-container";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <section id="home" aria-label="home">
-      <HomeContainer />
-    </section>
+    <>
+      <Head>
+        <title>{companyName}</title>
+        <meta name="description" content={description} />
+      </Head>
+      <section id="home" aria-label="home">
+        <HomeContainer />
+      </section>
+    </>
   );
 }

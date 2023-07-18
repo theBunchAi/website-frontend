@@ -3,19 +3,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsDiscord, BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 import useHeaderRef from "@/hooks/use-header-ref";
+import { footerText } from "@/common-data";
 
 export default function Footer() {
   const headerRef = useHeaderRef();
   const footerRef = useRef<HTMLDivElement | null>(null);
   const observerOptions = useRef<IntersectionObserverInit>({
     root: null,
-    threshold: 0.3,
+    threshold: 0.25,
   });
   const changeHeaderPos = useCallback(() => {
     if (headerRef.current) {
       const docHeight = document.body.scrollHeight;
       const num = footerRef.current?.clientHeight;
-      const diff = docHeight - (num ?? 0) + 50;
+      const diff = docHeight - (num ?? 0) + 20;
       headerRef.current.style.setProperty("position", "absolute");
       headerRef.current.style.setProperty("top", `${diff}px`);
     }
@@ -60,7 +61,7 @@ export default function Footer() {
           className="footer-img"
         />
       </div>
-      <span className="year-span">2023</span>
+      <span className="year-span">{footerText}</span>
       <div className="footer-links">
         <Link href="/">
           <BsTwitter />

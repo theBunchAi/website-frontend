@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap");
 
 :root {
-  --header-height: 12.5vh;
+  --header-height: 150px;
   --footer-height: 800px;
   --font-size: 1.4rem;
 
@@ -15,7 +15,7 @@
   --bg-color-blue: #4361ee;
   --card-shadow: 5px 5px 10px 4.5px rgba(0, 0, 0, 0.4);
   --label-color: rgb(181, 250, 255);
-  --placeholder-color: #d4d4d4;
+  --placeholder-color: #d4d4d46a;
   --common-font: "Inter", sans-serif;
   --header-font: "Monoton", cursive;
   --barcode-font: "Libre Barcode 39", cursive;

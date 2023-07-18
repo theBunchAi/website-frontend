@@ -5,29 +5,29 @@ import useHeaderRef from "@/hooks/use-header-ref";
 
 export default function Header() {
   const headerRef = useHeaderRef();
-  // useEffect(() => {
-  //   const docHeight = document.body.scrollHeight;
-  //   const num = 700;
-  //   const diff = docHeight - num;
-  //   if (headerRef.current?.classList[1] === "inactive") {
-  //     headerRef.current.style.setProperty("top", String(diff));
-  //     console.log(
-  //       headerRef.current.getBoundingClientRect().top,
-  //       headerRef.current.clientTop
-  //     );
-  //   }
-  // }, []);
   return (
     <header className={`header`} ref={headerRef}>
-      <Link href="/" className="img-container logo-container">
-        <Image
-          src="/assets/images/logo.png"
-          alt="Logo"
-          fill
-          priority
-          sizes="100%"
-          className="logo"
-        />
+      <Link href="/" className="logo-container">
+        <div className="img-container logo-shapes">
+          <Image
+            src="/assets/images/logo.png"
+            alt="Logo"
+            fill
+            priority
+            sizes="100%"
+            className="logo-img"
+          />
+        </div>
+        <div className="img-container logo-word">
+          <Image
+            src="/assets/images/logo-word.png"
+            alt="Logo"
+            fill
+            priority
+            sizes="100%"
+            className="logo-word-img"
+          />
+        </div>
       </Link>
       <nav className="nav">
         <Link href="/" className="nav-links">
@@ -35,9 +35,6 @@ export default function Header() {
         </Link>
         <Link href="/events" className="nav-links">
           Events
-        </Link>
-        <Link href="/" className="nav-links">
-          Join
         </Link>
       </nav>
     </header>
