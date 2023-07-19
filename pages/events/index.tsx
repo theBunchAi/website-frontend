@@ -1,11 +1,10 @@
-import React from "react";
 import type { GetStaticProps } from "next";
-import gqlclient from "@/gql/client";
-import { briefEventData } from "@/gql/queries";
-import type { BriefEventType } from "@/types/pages/event";
-import EventsContainer from "@/modules/events/events-container";
 import Head from "next/head";
 import { companyName, description } from "@/common-data";
+import { briefEventData } from "@/gql/queries";
+import gqlclient from "@/gql/client";
+import EventsContainer from "@/modules/events/events-container";
+import type { BriefEventType } from "@/types/pages/event";
 
 export const getStaticProps: GetStaticProps = async () => {
   const eventDataObj: Record<string, any> = await gqlclient.request(
@@ -14,7 +13,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const eventData: BriefEventType =
     eventDataObj?.eventInfoCollection?.items ?? [];
   return {
-    props: { eventData },
+    props: { eventData: eventData },
     revalidate: 60 * 60 * 6,
   };
 };

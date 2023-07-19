@@ -17,9 +17,7 @@ export default function RegisterForm({ eventName }: { eventName: string }) {
 
   const submitHandler: FormEventHandler = (event) => {
     event.preventDefault();
-    const targets: HTMLInputElement[] = Array.from(event.target as any);
     googleSubmit();
-    console.log(targets);
   };
 
   return (

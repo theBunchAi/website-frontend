@@ -1,6 +1,6 @@
+import Head from "next/head";
 import { companyName, description } from "@/common-data";
 import HomeContainer from "@/modules/home/home-container";
-import Head from "next/head";
 
 export default function Home() {
   return (

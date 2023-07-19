@@ -13,7 +13,7 @@
     "@types/react": "18.0.30",
     "@types/react-dom": "18.0.11",
     "axios": "^1.4.0",
-    "eslint-config-next": "13.2.4",
+    "eslint-config-next": "^13.4.10",
     "graphql-request": "^6.1.0",
     "next": "13.2.4",
     "react": "18.2.0",
@@ -23,10 +23,10 @@
   "devDependencies": {
     "@tsconfig/esm": "^1.0.2",
     "@tsconfig/strictest": "^2.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.57.0",
-    "@typescript-eslint/parser": "^5.57.0",
-    "eslint": "^8.37.0",
-    "eslint-import-resolver-typescript": "^3.5.4",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint": "^8.45.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-import": "^2.27.5",
     "sass": "^1.60.0",
     "typescript": "^5.0.2"

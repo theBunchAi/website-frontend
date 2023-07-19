@@ -2,11 +2,13 @@ import { FaqDataType, HomeCardsType } from "@/types/home/types";
 
 export const aboutHeader = "Join the exclusive club";
 export const aboutDescription =
-  "Tired of dull weekends and boring nights? TheBunch.ai helps you connect with like-minded individuals and participate in exclusive social events organized in your city! Be part of the coolest social scene ever.";
+  "Tired of dull weekends and boring nights? TheBunch.ai helps you connect with like-minded individuals and participate\
+  in exclusive social events organized in your city! Be part of the coolest social scene ever.";
 
 export const ctaHeader = "Get Started";
 export const ctaDescription =
-  "Dive into a plethora of excitement and entertainment exclusively crafted for you. Don’t miss out on the fun – join TheBunch.ai today!";
+  "Dive into a plethora of excitement and entertainment exclusively crafted for you.\
+  Don’t miss out on the fun – join TheBunch.ai today!";
 
 export const homeCardsData: HomeCardsType[] = [
   {
@@ -27,7 +29,8 @@ export const faqData: FaqDataType[] = [
   {
     question: "Why should I join TheBunch.ai?",
     answer:
-      "TheBunch.ai aims to bring like-minded people together for exceptional social experiences, forming friendships and creating memories.",
+      "TheBunch.ai aims to bring like-minded people together for exceptional social experiences,\
+      forming friendships and creating memories.",
   },
   {
     question: "How are the events organized?",

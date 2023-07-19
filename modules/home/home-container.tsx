@@ -1,9 +1,9 @@
+import { companyName } from "@/common-data";
 import PageHeading from "@/components/page-heading";
 import Faq from "./faq";
 import HomeAbout from "./home-about";
 import HomeCards from "./home-cards";
 import HomeCta from "./home-cta";
-import { companyName } from "@/common-data";
 
 export default function HomeContainer() {
   return (

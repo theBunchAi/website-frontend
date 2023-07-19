@@ -2,8 +2,8 @@ import { useRef, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BsDiscord, BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
-import useHeaderRef from "@/hooks/use-header-ref";
 import { footerText } from "@/common-data";
+import useHeaderRef from "@/hooks/use-header-ref";
 
 export default function Footer() {
   const headerRef = useHeaderRef();
@@ -34,7 +34,7 @@ export default function Footer() {
         }
       }
     },
-    []
+    [changeHeaderPos, headerRef]
   );
   useEffect(() => {
     const footerObserver = new IntersectionObserver(

@@ -1,7 +1,7 @@
-import { companyName, description } from "@/common-data";
-import RegisterContainer from "@/modules/register/register-container";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { companyName, description } from "@/common-data";
+import RegisterContainer from "@/modules/register/register-container";
 
 export default function Register() {
   const router = useRouter();

@@ -1,6 +1,6 @@
 import { useCallback } from "react";
-import type { BriefEventType } from "@/types/pages/event";
 import HomeEventCard from "@/components/home-event-card";
+import type { BriefEventType } from "@/types/pages/event";
 
 export default function EventCard({ eventData }: BriefEventType) {
   const mapper = useCallback(

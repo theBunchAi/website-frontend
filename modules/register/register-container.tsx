@@ -1,5 +1,5 @@
-import RegisterForm from "./register-form";
 import PageHeading from "@/components/page-heading";
+import RegisterForm from "./register-form";
 
 export default function RegisterContainer({
   eventName,
