@@ -14,8 +14,8 @@ export default function RegisterContainer({
         heightMed="40vh"
         heightSmall="40vh"
         fontSize="8rem"
-        fontSizeMed="6rem"
-        fontSizeSmall="20vw"
+        fontSizeMed="15vw"
+        fontSizeSmall="15vw"
       />
       <div className="form-body">
         <RegisterForm eventName={eventName} />
