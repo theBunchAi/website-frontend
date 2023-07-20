@@ -1,17 +1,16 @@
 .faq {
   height: 50vh;
-  background-color: var(--bg-color-purple);
+  background-color: var(--color-three);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--font-color);
+  color: var(--color-two);
   .faq-header {
     width: 70%;
     font-size: 4rem;
     @include header-font;
-
-    color: var(--bg-color-blue);
+    color: var(--color-one);
   }
   .faq-cards-container {
     width: 70%;
@@ -23,9 +22,10 @@
       display: flex;
       flex-direction: column;
       .question {
-        color: var(--bg-color-blue);
+        color: var(--color-one);
         margin-bottom: 1vh;
         font-size: 1.8rem;
+        font-weight: 600;
       }
       .answer {
         font-size: var(--font-size);

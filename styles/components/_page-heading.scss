@@ -1,5 +1,5 @@
 .page-heading-sec {
-  background-color: var(--bg-color-pink);
+  background-color: var(--color-four);
   width: 100%;
   position: relative;
   display: flex;
@@ -16,14 +16,16 @@
 
     .bg-img {
       object-fit: contain;
-      filter: hue-rotate(160deg) saturate(2.5);
+      filter: hue-rotate(222deg) saturate(1.5);
     }
     @keyframes grow {
       0% {
-        scale: 0.5;
+        height: 50%;
+        width: 50%;
       }
       100% {
-        scale: 1;
+        width: 100%;
+        height: 100%;
       }
     }
   }
@@ -42,7 +44,7 @@
       }
     }
     .company-heading {
-      color: var(--font-color);
+      color: var(--color-one);
       @include header-font;
       text-transform: uppercase;
       word-spacing: 0.5em;

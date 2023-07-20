@@ -6,8 +6,8 @@
   align-items: center;
   justify-content: center;
   padding: 2vh 0;
-  color: var(--font-color);
-  background-color: var(--bg-color-purple-light);
+  color: var(--color-one);
+  background-color: var(--color-two);
   .cta-heading {
     font-size: 4vw;
     @include header-font;
@@ -20,10 +20,11 @@
   }
   .cta-btn {
     display: block;
-    background-color: var(--bg-color-blue);
+    background-color: var(--color-three);
     font-size: var(--font-size);
     border-radius: 7.5px;
-    color: inherit;
+    color: var(--color-four);
+    font-weight: 600;
     text-decoration: none;
     padding: 0.5em 1em;
     transition: all 0.3s ease;

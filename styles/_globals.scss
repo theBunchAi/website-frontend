@@ -5,6 +5,18 @@
   font-family: var(--common-font);
 }
 
+::-webkit-scrollbar {
+  width: 7.5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-four);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-one);
+}
+
 .img-container {
   position: relative;
   img {

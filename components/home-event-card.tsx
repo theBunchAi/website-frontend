@@ -81,30 +81,28 @@ export default function HomeEventCard({
             className="event-poster"
           />
         </div>
-        <div className="overview-container">
+        <div className="details-container">
           <h2 className="event-name">{heading}</h2>
           <div className="info-container">
-            <div className="overview">
+            <div className="brief-info">
               <BsArrowRightCircleFill className="right-arrow" />
-              <div className="time-info">
-                <span className="event-date">
-                  <BsFillCalendarDayFill />
-                  {`${date.getDay()} ${
-                    months[date.getMonth()]
-                  } ${date.getFullYear()}`}
-                </span>
-                <span className="time">
-                  <BsClockFill />
-                  {getTime(date)}
-                </span>
-              </div>
+              <span className="event-date">
+                <BsFillCalendarDayFill />
+                {`${date.getDay()} ${
+                  months[date.getMonth()]
+                } ${date.getFullYear()}`}
+              </span>
+              <span className="time">
+                <BsClockFill />
+                {getTime(date)}
+              </span>
               <span className="venue">
                 <BsGeoAltFill />
                 {venue}
               </span>
               <span className="barcode-name">{heading}</span>
             </div>
-            <div className="details-container">
+            <div className="desc-container">
               <p className="details">{para}</p>
               <Link
                 href={{

@@ -1,6 +1,6 @@
 .home-cards {
   padding: 10vh 15%;
-  background-color: var(--bg-color-purple);
+  background-color: var(--color-three);
   gap: 1fr;
   --x-shift: 200px;
   .info-card {
@@ -34,18 +34,7 @@
       height: 500px;
       aspect-ratio: 1;
       border-radius: 15px;
-      filter: brightness(1.5);
       transform: translateX(var(--x-shift));
-      &::after {
-        border-radius: 15px;
-        content: "";
-        height: 100%;
-        width: 100%;
-        background-color: var(--bg-color-purple);
-        position: absolute;
-        opacity: 0.6;
-        filter: brightness(5) hue-rotate(-40deg);
-      }
       .cards-img {
         border-radius: 15px;
         object-fit: cover;
@@ -59,11 +48,11 @@
       .info-card-header {
         font-size: 2.2rem;
         @include header-font;
-        color: var(--bg-color-blue);
+        color: var(--color-one);
       }
       .info-para {
         font-size: var(--font-size);
-        color: var(--font-color);
+        color: var(--color-two);
       }
     }
   }

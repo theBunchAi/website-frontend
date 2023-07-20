@@ -10,7 +10,7 @@ export default function Footer() {
   const footerRef = useRef<HTMLDivElement | null>(null);
   const observerOptions = useRef<IntersectionObserverInit>({
     root: null,
-    threshold: 0.25,
+    threshold: 0.325,
   });
   const changeHeaderPos = useCallback(() => {
     if (headerRef.current) {
@@ -28,7 +28,7 @@ export default function Footer() {
         changeHeaderPos();
       } else {
         if (headerRef.current) {
-          headerRef.current.style.top = "80vh";
+          headerRef.current.style.top = "calc(90vh - var(--header-height))";
           headerRef.current.style.setProperty("position", "fixed");
           headerRef.current.style.transform = "translate(-50%,0)";
         }

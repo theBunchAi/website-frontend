@@ -1,20 +1,20 @@
 .footer {
   height: var(--footer-height);
-  background-color: var(--bg-color-purple);
+  background-color: var(--color-four);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  color: var(--font-color);
+  color: var(--color-one);
   .footer-img-container {
     position: absolute;
     height: 100%;
     width: 100%;
     .footer-img {
       object-fit: cover;
-      filter: hue-rotate(270deg) grayscale(0.5);
+      filter: hue-rotate(250deg) saturate(1.2);
     }
   }
   .year-span {
@@ -29,7 +29,7 @@
     justify-content: space-between;
     font-size: 1.75rem;
     a {
-      color: var(--font-color);
+      color: var(--color-one);
     }
   }
   @media only screen and (max-width: 900px) {
