@@ -17,6 +17,10 @@
   background: var(--color-one);
 }
 
+#__next {
+  overflow-x: hidden;
+}
+
 .img-container {
   position: relative;
   img {

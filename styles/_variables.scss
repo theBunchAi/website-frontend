@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Monoton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 :root {
   --header-height: 150px;
   --footer-height: 800px;
@@ -16,8 +15,26 @@
   --label-color: rgb(181, 250, 255);
   --common-font: "Inter", sans-serif;
   --header-font: "Monoton", cursive;
+  --sub-header-font: "Patrick Hand", cursive;
   --barcode-font: "Libre Barcode 39", cursive;
   --card-shadow: 5px 5px 10px 4.5px rgba(0, 0, 0, 0.4);
+
+  //palette
+
+  --one: #001bcf;
+  --two: #f0a60f; //comp
+
+  --four: #4c00cf; // analagous
+  --five: #0083cf;
+
+  --six: #cf001b; // tri
+  --seven: #1bcf00;
+
+  --eight: #cf0083; //tetra
+  --nine: #cfb400;
+  --ten: #00cf4c;
+
+  --three: #0324ff; // mono
 
   --transition-values: all 0.5s ease;
   --card-detail-anim: all 0.5s ease;

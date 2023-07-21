@@ -6,8 +6,8 @@
   align-items: center;
   justify-content: center;
   padding: 2vh 0;
-  color: var(--color-one);
-  background-color: var(--color-two);
+  color: var(--font-color);
+  background: linear-gradient(to bottom, var(--one), var(--five));
   .cta-heading {
     font-size: 4vw;
     @include header-font;
@@ -17,13 +17,14 @@
     margin-bottom: 2vh;
     font-size: var(--font-size);
     width: 40%;
+    opacity: 0.8;
   }
   .cta-btn {
     display: block;
-    background-color: var(--color-three);
+    background-color: var(--font-color);
     font-size: var(--font-size);
     border-radius: 7.5px;
-    color: var(--color-four);
+    color: var(--one);
     font-weight: 600;
     text-decoration: none;
     padding: 0.5em 1em;

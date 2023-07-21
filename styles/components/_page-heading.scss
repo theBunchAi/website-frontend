@@ -1,5 +1,5 @@
 .page-heading-sec {
-  background-color: var(--color-four);
+  background-color: var(--one);
   width: 100%;
   position: relative;
   display: flex;
@@ -13,10 +13,9 @@
     animation-name: grow;
     animation-duration: 0.75s;
     animation-timing-function: linear;
-
     .bg-img {
       object-fit: contain;
-      filter: hue-rotate(222deg) saturate(1.5);
+      filter: hue-rotate(10deg) drop-shadow(0 0 20px rgba(0, 0, 0, 0.4));
     }
     @keyframes grow {
       0% {
@@ -35,6 +34,7 @@
     animation-duration: 0.75s;
     text-align: center;
     animation-timing-function: linear;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
     @keyframes shrink {
       0% {
         scale: 1.5;
@@ -44,7 +44,7 @@
       }
     }
     .company-heading {
-      color: var(--color-one);
+      color: var(--font-color);
       @include header-font;
       text-transform: uppercase;
       word-spacing: 0.5em;

@@ -1,6 +1,6 @@
 .footer {
   height: var(--footer-height);
-  background-color: var(--color-four);
+  background: linear-gradient(to bottom, var(--five), white);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
     height: 100%;
     width: 100%;
     .footer-img {
-      object-fit: cover;
+      object-fit: contain;
       filter: hue-rotate(250deg) saturate(1.2);
     }
   }
@@ -31,9 +31,6 @@
     a {
       color: var(--color-one);
     }
-  }
-  @media only screen and (max-width: 900px) {
-    height: 600px;
   }
   @media only screen and (max-width: 600px) {
     .year-span {

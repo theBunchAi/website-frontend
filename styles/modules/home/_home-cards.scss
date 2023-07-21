@@ -1,6 +1,6 @@
 .home-cards {
   padding: 10vh 15%;
-  background-color: var(--color-three);
+  background-color: var(--five);
   gap: 1fr;
   --x-shift: 200px;
   .info-card {
@@ -46,13 +46,14 @@
       transition: var(--transition-values);
       transition-delay: 0.25s;
       .info-card-header {
-        font-size: 2.2rem;
-        @include header-font;
-        color: var(--color-one);
+        font-size: 2.6rem;
+        font-family: var(--sub-header-font);
+        color: var(--font-color);
       }
       .info-para {
         font-size: var(--font-size);
-        color: var(--color-two);
+        color: var(--font-color);
+        opacity: 0.8;
       }
     }
   }
