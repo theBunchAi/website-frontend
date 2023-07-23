@@ -48,7 +48,7 @@ export default function RegisterForm({ eventName }: { eventName: string }) {
           Mail Address
         </label>
         <input
-          type="text"
+          type="email"
           name="mail"
           placeholder="Your mail"
           id="mail"
