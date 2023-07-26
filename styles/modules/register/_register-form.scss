@@ -43,13 +43,14 @@
     font-size: 1rem;
     transition: all 0.3s ease;
     font-weight: 400;
-    color: var(--font-color);
+    color: black;
     &::placeholder {
       font-size: 0.85rem;
       color: var(--placeholder-color);
     }
     &:focus {
       outline: none;
+      color: black;
     }
 
     &[type="checkbox"] {
