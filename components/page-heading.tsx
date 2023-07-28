@@ -64,7 +64,7 @@ export default function PageHeading({
     <section className="page-heading-sec" ref={sectionRef}>
       <div className="img-container bg-img-container">
         <Image
-          src="/assets/images/dt-transformed.png"
+          src="/assets/images/home-bg.webp"
           alt="3D Swirl"
           fill
           priority

@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 :root {
   --header-height: 6vh;
   --footer-height: 800px;
@@ -13,9 +15,9 @@
   --color-three: #001bcf;
   --color-four: #e8e8e8;
   --label-color: rgb(181, 250, 255);
-  --common-font: "Inter", sans-serif;
+  --common-font: "Poppins", sans-serif;
   --header-font: "Monoton", cursive;
-  --sub-header-font: "Patrick Hand", cursive;
+  --sub-header-font: "Cormorant Garamond", cursive;
   --barcode-font: "Libre Barcode 39", cursive;
   --card-shadow: 5px 5px 10px 4.5px rgba(0, 0, 0, 0.4);
 

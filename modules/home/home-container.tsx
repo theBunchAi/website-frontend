@@ -8,6 +8,10 @@ import HomeCta from "./home-cta";
 export default function HomeContainer() {
   return (
     <>
+      <div className="ocean">
+        <div className="wave"></div>
+        <div className="wave"></div>
+      </div>
       <PageHeading
         text={companyName}
         height="100vh"

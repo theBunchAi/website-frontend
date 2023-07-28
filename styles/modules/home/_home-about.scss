@@ -1,10 +1,23 @@
 .home-about {
-  background: linear-gradient(to bottom, var(--one), var(--one));
+  background: linear-gradient(to bottom, #000417 1%, var(--one));
+  min-height: 70vh;
   width: 100%;
   padding: 5vh 0;
   position: relative;
   display: flex;
   align-items: center;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+    backdrop-filter: blur(10px);
+    filter: blur(10px);
+    z-index: 9;
+  }
   .about-img-container {
     position: absolute;
     height: 300%;

@@ -7,7 +7,7 @@
   justify-content: center;
   padding: 2vh 0;
   color: var(--font-color);
-  background: linear-gradient(to bottom, var(--one), var(--five));
+  background: linear-gradient(to bottom, var(--one) 5%, var(--five));
   .cta-heading {
     font-size: 4vw;
     @include header-font;
