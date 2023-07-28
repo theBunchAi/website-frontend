@@ -10,13 +10,13 @@ export default function Footer() {
   const footerRef = useRef<HTMLDivElement | null>(null);
   const observerOptions = useRef<IntersectionObserverInit>({
     root: null,
-    threshold: 0.325,
+    threshold: 0.275,
   });
   const changeHeaderPos = useCallback(() => {
     if (headerRef.current) {
       const docHeight = document.body.scrollHeight;
       const num = footerRef.current?.clientHeight;
-      const diff = docHeight - (num ?? 0) + 20;
+      const diff = docHeight - (num ?? 0) + 80;
       headerRef.current.style.setProperty("position", "absolute");
       headerRef.current.style.setProperty("top", `${diff}px`);
     }

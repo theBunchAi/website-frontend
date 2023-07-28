@@ -16,13 +16,14 @@
     transform: translateY(-50%);
     backdrop-filter: blur(10px);
     filter: blur(10px);
-    z-index: 9;
+    z-index: 2;
   }
   .about-img-container {
     position: absolute;
     height: 300%;
     width: 50%;
     left: 75%;
+    z-index: 3;
     .about-img {
       object-fit: contain;
       filter: hue-rotate(140deg);

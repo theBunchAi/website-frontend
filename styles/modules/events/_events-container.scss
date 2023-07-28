@@ -1,6 +1,6 @@
 @import "./event-card";
 .event-cards-container {
-  background: linear-gradient(to top, var(--five), var(--one));
+  background: linear-gradient(to bottom, black 5%, var(--one), var(--five));
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
