@@ -11,6 +11,12 @@
   justify-content: center;
   padding: 0 var(--default-side-padding);
   gap: 30px;
+  @media only screen and (max-width: 900px) {
+    & {
+      height: fit-content;
+      padding: 5vh var(--default-side-padding);
+    }
+  }
   &::before {
     content: "";
     position: absolute;
@@ -30,6 +36,16 @@
     width: 700px;
     justify-content: space-between;
     align-items: center;
+    @media only screen and (max-width: 900px) {
+      & {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 20px;
+        place-items: center;
+        text-align: center;
+      }
+    }
     .perk {
       display: flex;
       flex-direction: column;

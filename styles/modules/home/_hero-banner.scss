@@ -17,4 +17,12 @@
   .hero-banner-heading {
     z-index: 1;
   }
+  @media only screen and (max-width: 900px) {
+    & {
+      height: 50vh;
+    }
+    .img-container {
+      width: 100%;
+    }
+  }
 }
