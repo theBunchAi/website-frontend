@@ -1,9 +1,58 @@
-//global variables
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 
 :root {
-  //if you want css variables
-  --some-variable-here: "some value here";
+  --font-heading: "Monoton", cursive;
+  --font-subheading: "Cormorant Garamond", serif;
+  --font-default: "Poppins", sans-serif;
+
+  --color-primary: #001bcf;
+  --color-primary-light: #0083cf;
+  --color-primary-dark: #000624;
+  --color-font-default: #ffffff;
+  --color-font-dark: #000000;
+
+  --curvy-hue-shift-1: 160deg;
+  --curvy-hue-shift-2: 0deg;
+
+  --size-font-heading: 12.5vw;
+  --size-font-heading-small: 4rem;
+  --size-font-subheading: 2.2rem;
+  --size-font-deafult: 1rem;
+
+  --animation-scale-big: 10;
+  --animation-scale-small: 0;
+
+  --default-side-padding: 7.5vw;
 }
 
-// if you want scss variables
-$some-variable-here: "some value here";
+@keyframes flower-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes fade-scale-b2s {
+  0% {
+    scale: var(--animation-scale-big);
+    opacity: 0;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
+@keyframes fade-scale-s2b {
+  0% {
+    scale: var(--animation-scale-small);
+    opacity: 0;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}

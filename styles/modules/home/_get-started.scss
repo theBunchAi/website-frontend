@@ -1,0 +1,14 @@
+#home-get-started {
+  background: linear-gradient(var(--color-primary), var(--color-primary-light));
+  padding: 0 var(--default-side-padding);
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .get-started-text {
+    width: 50%;
+    min-width: 800px;
+    text-align: center;
+  }
+}
