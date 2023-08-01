@@ -38,5 +38,3 @@ next-env.d.ts
 yarn.lock
 package-lock.json
 *.log
-*.css
-*.map
