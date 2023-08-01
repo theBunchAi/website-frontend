@@ -28,5 +28,10 @@
     "eslint-plugin-import": "^2.27.5",
     "sass": "^1.60.0",
     "typescript": "^5.0.2"
-  }
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 3%",
+    "not dead"
+  ]
 }

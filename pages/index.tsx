@@ -1,4 +1,10 @@
-import { HomeHeroBanner, JoinUs, GetStarted, Cards } from "@/modules/home";
+import {
+  HomeHeroBanner,
+  JoinUs,
+  GetStarted,
+  Cards,
+  Faqs,
+} from "@/modules/home";
 
 export default function Home() {
   return (
@@ -7,6 +13,7 @@ export default function Home() {
       <JoinUs />
       <GetStarted />
       <Cards />
+      <Faqs />
     </section>
   );
 }

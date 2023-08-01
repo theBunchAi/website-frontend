@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 
 :root {
   --font-heading: "Monoton", cursive;
@@ -10,7 +10,8 @@
 
   --color-primary: #001bcf;
   --color-primary-light: #0083cf;
-  --color-primary-dark: #000624;
+  --color-primary-dark: #000417;
+  --landing-drop-shadow: 0 0 350px rgba(0, 47, 255, 0.6);
   --color-font-default: #ffffff;
   --color-font-dark: #000000;
 
@@ -26,6 +27,26 @@
   --animation-scale-small: 0;
 
   --default-side-padding: 7.5vw;
+
+  --footer-height: 30vw;
+  --footer-text-size: 15vw;
+}
+
+@media only screen and (max-width: 900px) {
+  :root {
+    --size-font-heading: 14vw;
+    --size-font-heading-small: 1.8rem;
+    --size-font-subheading: 1.3rem;
+    --size-font-deafult: 0.8rem;
+
+    --animation-scale-big: 10;
+    --animation-scale-small: 0;
+
+    --default-side-padding: 7.5vw;
+
+    --footer-height: 70vw;
+    --footer-text-size: 25vw;
+  }
 }
 
 @keyframes flower-rotate {

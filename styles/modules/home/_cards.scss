@@ -6,6 +6,7 @@
   justify-content: center;
   gap: 30px;
   padding: 0 var(--default-side-padding);
+  width: 100%;
   .card {
     display: flex;
     height: 30vh;
@@ -16,7 +17,7 @@
       width: auto;
       aspect-ratio: 1;
       border-radius: 10px;
-      transform: translateX(-125%);
+      transform: translateX(-107.5%);
       transition: all 0.3s ease-in-out;
     }
     .card-content {
@@ -44,11 +45,57 @@
     }
     &:nth-child(even) {
       .img-container {
-        transform: translateX(142.5%);
+        transform: translateX(112.5%);
       }
       &.active {
         .img-container {
           transform: translateX(0);
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    & {
+      .card {
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+        height: fit-content;
+        .img-container {
+          width: 100%;
+          height: auto;
+          aspect-ratio: 1;
+          transform: translateX(0) translateY(50%);
+        }
+        .card-content {
+          width: 100%;
+          transform: translateX(0) translateY(50%);
+        }
+        &.active {
+          width: 100%;
+          .card-content {
+            transform: translateX(0) translateY(0);
+            opacity: 1;
+          }
+          .img-container {
+            transform: translateX(0) translateY(0);
+          }
+        }
+        &:nth-child(odd) {
+          flex-direction: column;
+        }
+        &:nth-child(even) {
+          .img-container {
+            transform: translateX(0) translateY(50%);
+          }
+          &.active {
+            .img-container {
+              transform: translateX(0) translateY(0);
+            }
+            .card-content {
+              transform: translateX(0) translateY(0);
+            }
+          }
         }
       }
     }
