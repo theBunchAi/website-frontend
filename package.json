@@ -26,7 +26,6 @@
     "eslint": "^8.37.0",
     "eslint-import-resolver-typescript": "^3.5.4",
     "eslint-plugin-import": "^2.27.5",
-    "sass": "^1.60.0",
     "typescript": "^5.0.2"
   },
   "browserslist": [
