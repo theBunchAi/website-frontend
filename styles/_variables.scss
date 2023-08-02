@@ -7,11 +7,13 @@
   --font-heading: "Monoton", cursive;
   --font-subheading: "Cormorant Garamond", serif;
   --font-default: "Poppins", sans-serif;
+  --font-barcode: "Libre Barcode 39", cursive;
 
   --color-primary: #001bcf;
   --color-primary-light: #0083cf;
   --color-primary-dark: #000417;
-  --landing-drop-shadow: 0 0 350px rgba(0, 47, 255, 0.6);
+  --landing-drop-shadow-color: rgba(0, 47, 255, 0.6);
+  --landing-drop-shadow: 0 0 350px var(--landing-drop-shadow-color);
   --color-font-default: #ffffff;
   --color-font-dark: #000000;
 
