@@ -26,10 +26,13 @@ export default function HeroBannerCommon({
   }, []);
   useEffect(() => {
     const target = ref.current?.querySelector("img");
+    const targetTwo = ref.current?.querySelector("h1");
     if (target && !isIOS()) {
       target?.classList.add("aniS2BwithRotate");
+      targetTwo?.classList.add("aniB2C");
     } else {
       target?.classList.add("no-main-animation");
+      targetTwo?.classList.add("no-main-animation");
     }
   }, [isIOS]);
   return (
@@ -39,7 +42,7 @@ export default function HeroBannerCommon({
         alt="The Bunch Ai"
         priority
       />
-      <h1 className="hero-banner-heading aniB2C">{title}</h1>
+      <h1 className="hero-banner-heading">{title}</h1>
     </div>
   );
 }
