@@ -1,6 +1,4 @@
-import type { ImgHTMLAttributes } from "react";
-export interface ImageContainerProps
-  extends ImgHTMLAttributes<HTMLImageElement> {
+import type { ImageProps } from "next/image";
+export interface ImageContainerProps extends ImageProps {
   containerClassName?: string;
-  priority?: boolean;
 }
