@@ -1,15 +1,16 @@
-import Image from "next/image";
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import type { ImageContainerProps } from "./types";
 
 export default function ImageContainer(props: ImageContainerProps) {
-  const { src, alt, containerClassName, ...allOtherProps } = props;
+  const { containerClassName, ...allOtherProps } = props;
   return (
     <div
       className={
         "img-container" + (containerClassName ? " " + containerClassName : "")
       }
     >
-      <Image {...allOtherProps} src={src} alt={alt} fill sizes="100vw" />
+      <img {...allOtherProps} />
     </div>
   );
 }

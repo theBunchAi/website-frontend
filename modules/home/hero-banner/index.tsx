@@ -7,7 +7,7 @@ export default function HeroBanner() {
         src="/assets/images/home-bg.webp"
         alt="The Bunch Ai"
         className="aniS2BwithRotate"
-        priority
+        loading="eager"
       />
       <h1 className="hero-banner-heading aniB2C">The Bunch</h1>
     </div>

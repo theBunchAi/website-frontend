@@ -1,8 +1,7 @@
-import type { ImageProps } from "next/image";
 export interface EventCardProps {
   img: {
-    src: ImageProps["src"];
-    alt: ImageProps["alt"];
+    src: string;
+    alt: string;
   };
   heading: string;
   description: string;
