@@ -29,9 +29,12 @@ export default function HeroBannerCommon({
     const targetTwo = ref.current?.querySelector("h1");
     if (target && !isIOS()) {
       target?.classList.add("aniS2BwithRotate");
-      targetTwo?.classList.add("aniB2C");
     } else {
       target?.classList.add("no-main-animation");
+    }
+    if (targetTwo && isIOS()) {
+      targetTwo?.classList.add("aniB2C");
+    } else {
       targetTwo?.classList.add("no-main-animation");
     }
   }, [isIOS]);
