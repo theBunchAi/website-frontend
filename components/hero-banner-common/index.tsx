@@ -37,11 +37,11 @@ export default function HeroBannerCommon({
   }, [isIOS]);
   return (
     <div id={`${module}-hero-banner`} ref={ref}>
-      <ImageContainer
+      {/* <ImageContainer
         src="/assets/images/home-bg.webp"
         alt="The Bunch Ai"
         priority
-      />
+      /> */}
       <h1 className="hero-banner-heading">{title}</h1>
     </div>
   );
