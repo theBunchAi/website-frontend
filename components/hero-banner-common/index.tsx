@@ -32,7 +32,7 @@ export default function HeroBannerCommon({
     } else {
       target?.classList.add("no-main-animation");
     }
-    if (targetTwo && isIOS()) {
+    if (targetTwo && !isIOS()) {
       targetTwo?.classList.add("aniB2C");
     } else {
       targetTwo?.classList.add("no-main-animation");
