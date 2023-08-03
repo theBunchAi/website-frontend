@@ -1,0 +1,35 @@
+#register-hero-banner {
+  height: 40vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .img-container {
+    position: absolute;
+    height: 100%;
+    aspect-ratio: 1;
+    filter: drop-shadow(var(--landing-drop-shadow));
+    z-index: 1;
+    img {
+      object-fit: contain;
+    }
+  }
+  .hero-banner-heading {
+    font-size: 10vw;
+    z-index: 2;
+  }
+  @media only screen and (max-width: 900px) {
+    & {
+      .img-container {
+        height: 100%;
+        width: 100%;
+      }
+      .hero-banner-heading {
+        font-size: 12.5vw;
+      }
+    }
+  }
+}

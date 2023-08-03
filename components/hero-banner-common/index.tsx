@@ -27,12 +27,13 @@ export default function HeroBannerCommon({
   useEffect(() => {
     const target = ref.current?.querySelector("img");
     const targetTwo = ref.current?.querySelector("h1");
-    if (target && !isIOS()) {
+    const isNotIphone = !isIOS();
+    if (target && isNotIphone) {
       target?.classList.add("aniS2BwithRotate");
     } else {
       target?.classList.add("no-main-animation");
     }
-    if (targetTwo && !isIOS()) {
+    if (targetTwo && isNotIphone) {
       targetTwo?.classList.add("aniB2C");
     } else {
       targetTwo?.classList.add("no-main-animation");

@@ -80,13 +80,15 @@ export default function EventCard(props: EventCardProps) {
             <p className="event-text">{description}</p>
             <Link
               href={{
-                href: "/register",
+                pathname: "/register",
                 query: {
                   event: heading,
                 },
               }}
               className="register-link"
-            ></Link>
+            >
+              Register
+            </Link>
           </div>
         </div>
       </div>
