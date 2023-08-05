@@ -6,11 +6,22 @@
   background-color: rgba(255, 255, 255, 0.4);
   display: flex;
   border: 1.5px solid var(--color-font-default);
-  z-index: 999;
+  z-index: 99;
   backdrop-filter: blur(5px);
   gap: 2rem;
   padding: 0.5rem 1.5rem;
   border-radius: 7.5px;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 60%;
+    width: 1.5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-font-default);
+    z-index: 999;
+  }
   .header-links {
     color: var(--color-font-dark);
     text-decoration: none;

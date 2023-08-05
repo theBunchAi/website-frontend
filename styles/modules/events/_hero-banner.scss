@@ -9,16 +9,17 @@
   .img-container {
     position: absolute;
     height: 100%;
-    aspect-ratio: 1;
+    width: 100%;
     filter: drop-shadow(var(--landing-drop-shadow));
     z-index: 1;
     img {
-      object-fit: contain;
+      object-fit: cover;
     }
   }
   .hero-banner-heading {
     font-size: 10vw;
     z-index: 2;
+    color: black;
   }
   @media only screen and (max-width: 900px) {
     & {

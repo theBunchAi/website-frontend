@@ -1,5 +1,5 @@
 import { useEffect, useRef, useCallback } from "react";
-// import ImageContainer from "../image-container";
+import ImageContainer from "../image-container";
 
 export default function HeroBannerCommon({
   title,
@@ -25,14 +25,14 @@ export default function HeroBannerCommon({
     );
   }, []);
   useEffect(() => {
-    const target = ref.current?.querySelector("img");
+    // const target = ref.current?.querySelector("img");
     const targetTwo = ref.current?.querySelector("h1");
     const isNotIphone = !isIOS();
-    if (target && isNotIphone) {
-      target?.classList.add("aniS2BwithRotate");
-    } else {
-      target?.classList.add("no-main-animation");
-    }
+    // if (target && isNotIphone) {
+    //   target?.classList.add("aniS2BwithRotate");
+    // } else {
+    //   target?.classList.add("no-main-animation");
+    // }
     if (targetTwo && isNotIphone) {
       targetTwo?.classList.add("aniB2C");
     } else {
@@ -41,11 +41,11 @@ export default function HeroBannerCommon({
   }, [isIOS]);
   return (
     <div id={`${module}-hero-banner`} ref={ref}>
-      {/* <ImageContainer
-        src="/assets/images/home-bg.webp"
+      <ImageContainer
+        src="/assets/images/bgg.webp"
         alt="The Bunch Ai"
         priority
-      /> */}
+      />
       <h1 className="hero-banner-heading">{title}</h1>
     </div>
   );

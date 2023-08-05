@@ -3,7 +3,7 @@ import ImageContainer from "@/components/image-container";
 
 export default function Cards() {
   const obsvOpts = useRef<IntersectionObserverInit>({
-    threshold: 1,
+    threshold: 0.75,
   });
   const cardContainerRef = useRef<HTMLDivElement>(null);
   const obsvCallback = useCallback<IntersectionObserverCallback>(

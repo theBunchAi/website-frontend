@@ -9,10 +9,19 @@
   --font-default: "Poppins", sans-serif;
   --font-barcode: "Libre Barcode 39", cursive;
 
-  --color-primary: #001bcf;
-  --color-primary-light: #0083cf;
+  // --color-primary: #001bcf;
+  // --color-primary-light: #0083cf;
+  // --color-primary-dark: #000417;
+  // --landing-drop-shadow-color: rgba(0, 47, 255, 0.6);
+  // --landing-drop-shadow: 0 0 350px var(--landing-drop-shadow-color);
+  // --color-font-default: #ffffff;
+  // --color-font-dark: #000000;
+  // --placeholder-color: rgba(191, 191, 191, 0.5);
+
+  --color-primary: #000417;
+  --color-primary-light: #000417;
   --color-primary-dark: #000417;
-  --landing-drop-shadow-color: rgba(0, 47, 255, 0.6);
+  --landing-drop-shadow-color: #000417;
   --landing-drop-shadow: 0 0 350px var(--landing-drop-shadow-color);
   --color-font-default: #ffffff;
   --color-font-dark: #000000;
