@@ -1,5 +1,6 @@
 import { useEffect, useRef, useCallback } from "react";
 import ImageContainer from "../image-container";
+import Link from "next/link";
 
 export default function HeroBannerCommon({
   title,
@@ -41,12 +42,20 @@ export default function HeroBannerCommon({
   }, [isIOS]);
   return (
     <div id={`${module}-hero-banner`} ref={ref}>
-      <ImageContainer
-        src="/assets/images/bgg.webp"
+      {/* <ImageContainer
+        src="/assets/images/curves.jpg"
         alt="The Bunch Ai"
         priority
-      />
+      /> */}
       <h1 className="hero-banner-heading">{title}</h1>
+      <div className="navigation-container">
+        <Link href="/" className="home-link nav-link">
+          Home
+        </Link>
+        <Link href="/events" className="home-link nav-link">
+          Events
+        </Link>
+      </div>
     </div>
   );
 }

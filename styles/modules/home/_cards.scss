@@ -1,5 +1,4 @@
 #home-cards {
-  background-color: var(--color-primary-light);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,9 +8,10 @@
   width: 100%;
   .card {
     display: flex;
-    height: 30vh;
+    height: 50vh;
     justify-content: space-between;
-
+    gap: 5vh;
+    width: 90%;
     .img-container {
       height: 100%;
       width: auto;
@@ -42,6 +42,7 @@
     }
     &:nth-child(odd) {
       flex-direction: row-reverse;
+      text-align: right;
     }
     &:nth-child(even) {
       .img-container {

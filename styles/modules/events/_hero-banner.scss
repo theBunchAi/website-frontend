@@ -1,6 +1,7 @@
 #events-hero-banner {
+  --link-text-size: 1.6rem;
+
   height: 40vh;
-  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,9 +20,57 @@
   .hero-banner-heading {
     font-size: 10vw;
     z-index: 2;
-    color: black;
+    color: var(--font-color);
+  }
+  .navigation-container {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    animation: fade-link-text 1s linear 0s normal forwards,
+      view-div 1s linear 1s normal forwards;
+    .nav-link {
+      text-decoration: none;
+      font-size: var(--link-text-size);
+      width: 100px;
+      text-align: center;
+      transition: var(--transition-default);
+      &:hover {
+        opacity: 0.4;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 2px;
+      background-color: var(--color-font-default);
+      z-index: 100;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    @keyframes fade-link-text {
+      0% {
+        opacity: 0;
+        scale: 0.5;
+      }
+      100% {
+        opacity: 0;
+        scale: 1;
+      }
+    }
+    @keyframes view-div {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
   }
   @media only screen and (max-width: 900px) {
+    --link-text-size: 1.2rem;
+
     & {
       .img-container {
         height: 100%;

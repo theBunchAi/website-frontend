@@ -9,6 +9,15 @@
   --font-default: "Poppins", sans-serif;
   --font-barcode: "Libre Barcode 39", cursive;
 
+  --color-bg: #000417;
+  --color-font-default: #ffffff;
+  --color-primary: #001bcf;
+  --color-primary-light: #e0e5fc;
+  --color-primary-dark: #000417;
+  --placeholder-color: rgba(48, 48, 48, 0.75);
+  --landing-drop-shadow-color: rgba(0, 27, 207, 0.4);
+  --landing-drop-shadow: 0 0 350px var(--landing-drop-shadow-color);
+
   // --color-primary: #001bcf;
   // --color-primary-light: #0083cf;
   // --color-primary-dark: #000417;
@@ -18,22 +27,26 @@
   // --color-font-dark: #000000;
   // --placeholder-color: rgba(191, 191, 191, 0.5);
 
-  --color-primary: #000417;
-  --color-primary-light: #000417;
-  --color-primary-dark: #000417;
-  --landing-drop-shadow-color: #000417;
-  --landing-drop-shadow: 0 0 350px var(--landing-drop-shadow-color);
-  --color-font-default: #ffffff;
+  // --color-primary: #000417;
+
   --color-font-dark: #000000;
-  --placeholder-color: rgba(191, 191, 191, 0.5);
+
+  // --color-primary: #ffffff;
+  // --color-primary-light: #ffffff;
+  // --color-primary-dark: #ffffff;
+  // --landing-drop-shadow-color: #553e3e;
+  // --landing-drop-shadow: 0 0 350px var(--landing-drop-shadow-color);
+  // --color-font-default: #001bcf;
+  // --color-font-dark: #000000;
+  // --placeholder-color: rgba(191, 191, 191, 0.5);
 
   --curvy-hue-shift-1: 160deg;
   --curvy-hue-shift-2: 0deg;
 
   --size-font-heading: 12.5vw;
   --size-font-heading-small: 4rem;
-  --size-font-subheading: 2.2rem;
-  --size-font-deafult: 1rem;
+  --size-font-subheading: 2.4rem;
+  --size-font-deafult: 1.2rem;
 
   --animation-scale-big: 10;
   --animation-scale-small: 0;

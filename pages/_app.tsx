@@ -1,12 +1,12 @@
 import type { AppProps } from "next/app";
 import Footer from "@/components/footer";
 import "@/styles/styles.css";
-import Header from "@/components/header";
+import PageBackground from "@/components/page-background";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Header />
+      <PageBackground />
       <Component {...pageProps} />
       <Footer />
     </>

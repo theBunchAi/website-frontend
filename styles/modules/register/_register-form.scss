@@ -4,23 +4,6 @@
   align-items: center;
   justify-content: center;
   padding: 100px 0;
-  background: linear-gradient(
-    to bottom,
-    var(--color-primary-dark),
-    var(--color-primary-light)
-  );
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    transform: translateY(-50%);
-    top: 0;
-    backdrop-filter: blur(10px);
-    filter: blur(10px);
-    z-index: 1;
-  }
   .form {
     z-index: 0;
     display: flex;
@@ -39,9 +22,9 @@
       width: 50%;
       padding: 3em;
       justify-content: center;
-      background-color: var(--color-font-dark);
+      background-color: var(--color-primary-light);
       .form-heading {
-        color: var(--color-font-default);
+        color: var(--color-primary-dark);
         font-size: 2vw;
         margin-bottom: 2vh;
       }
@@ -50,7 +33,7 @@
         margin-bottom: 5px;
         margin-top: 2vh;
         font-weight: 400;
-        color: var(--color-font-default);
+        color: var(--color-primary-dark);
         width: fit-content;
       }
     }
@@ -60,8 +43,8 @@
       border-radius: 5px;
       display: flex;
       align-items: center;
-      border: 1px solid var(--color-font-default);
-      caret-color: var(--color-font-default);
+      border: 1px solid var(--color-primary-dark);
+      caret-color: var(--color-primary-dark);
       font-size: 1rem;
       transition: all 0.3s ease;
       font-weight: 400;
@@ -72,7 +55,7 @@
       }
       &:focus {
         outline: none;
-        color: var(--color-font-default);
+        color: var(--color-primary-dark);
       }
 
       &[type="checkbox"] {
@@ -82,8 +65,10 @@
     .checkbox {
       display: flex;
       margin: 2vh 0;
-      color: var(--color-font-default);
       font-size: 1.25rem;
+      span {
+        color: var(--color-font-dark);
+      }
     }
     .reg-btn {
       font-size: 1rem;

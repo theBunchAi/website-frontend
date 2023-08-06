@@ -1,24 +1,75 @@
 #home-hero-banner {
+  --link-text-size: 1.6rem;
   position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-primary-dark);
+  flex-direction: column;
   .img-container {
     filter: invert(1);
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 1;
-    mix-blend-mode: lighten;
+    mix-blend-mode: difference;
     opacity: 0.25;
+    img {
+      object-position: bottom;
+    }
   }
   .hero-banner-heading {
     z-index: 2;
   }
+  .navigation-container {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    animation: fade-link-text 1s linear 0s normal forwards,
+      view-div 1s linear 1s normal forwards;
+    .nav-link {
+      text-decoration: none;
+      font-size: var(--link-text-size);
+      width: 100px;
+      text-align: center;
+      transition: var(--transition-default);
+      &:hover {
+        opacity: 0.4;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 2px;
+      background-color: var(--color-font-default);
+      z-index: 100;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    @keyframes fade-link-text {
+      0% {
+        opacity: 0;
+        scale: 0.5;
+      }
+      100% {
+        opacity: 0;
+        scale: 1;
+      }
+    }
+    @keyframes view-div {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
   @media only screen and (max-width: 900px) {
+    --link-text-size: 1.2rem;
     & {
       height: 50vh;
     }

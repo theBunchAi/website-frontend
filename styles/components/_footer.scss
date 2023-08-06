@@ -1,6 +1,5 @@
 #main-footer {
   height: var(--footer-height);
-  background: linear-gradient(to bottom, var(--color-primary-light), white);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +11,7 @@
     aspect-ratio: 1;
   }
   .footer-text {
-    color: var(--color-primary-dark);
+    color: var(--font-default);
     z-index: 1;
     font-size: var(--footer-text-size);
     font-family: var(--font-heading);
@@ -24,12 +23,12 @@
     gap: 2rem;
     transform: translateY(-100%);
     * {
-      color: var(--color-primary-dark);
+      color: var(--font-default);
       font-size: 2rem;
       transition: all 0.3s ease-in-out;
     }
     & > *:hover * {
-      color: var(--color-primary);
+      color: var(--color-secondary); //change
     }
     @media only screen and (max-width: 900px) {
       & {

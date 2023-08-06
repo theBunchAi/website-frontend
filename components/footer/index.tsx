@@ -8,7 +8,7 @@ export default function Footer() {
         src="/assets/images/curls.webp"
         alt="The bunch AI | curls"
       />
-      <span className="footer-text">Play</span>
+      <span className="footer-text">Vibes</span>
       <div className="socials">
         <a
           href="https://m.facebook.com/people/The-Bunchai/100080487391695/"
