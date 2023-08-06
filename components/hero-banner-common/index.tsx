@@ -1,6 +1,6 @@
 import { useEffect, useRef, useCallback } from "react";
-import ImageContainer from "../image-container";
 import Link from "next/link";
+// import ImageContainer from "../image-container";
 
 export default function HeroBannerCommon({
   title,
