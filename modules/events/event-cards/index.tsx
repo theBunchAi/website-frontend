@@ -1,7 +1,12 @@
 import EventCard, { type EventCardProps } from "@/components/event-card";
+import { eventDataType } from "@/types";
 
-export default function EventCards({ eventData }: { eventData: any }) {
-  const events: EventCardProps[] = eventData.map((item: any) => ({
+export default function EventCards({
+  eventData,
+}: {
+  eventData: eventDataType[];
+}) {
+  const events: EventCardProps[] = eventData.map((item) => ({
     heading: item.eventName,
     date: new Date(item.eventDate),
     description: item.longDescription,

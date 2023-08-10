@@ -2,12 +2,14 @@
 // @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 // @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 // @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 :root {
   --font-heading: "Monoton", cursive;
-  --font-subheading: "Cormorant Garamond", serif;
+  // --font-subheading: "Cormorant Garamond", serif;
   --font-default: "Poppins", sans-serif;
   --font-barcode: "Libre Barcode 39", cursive;
+  --font-subheading: "Bebas Neue", sans-serif;
 
   --color-bg: #000417;
   --color-font-default: #ffffff;
@@ -17,28 +19,7 @@
   --placeholder-color: rgba(48, 48, 48, 0.75);
   --landing-drop-shadow-color: rgba(0, 27, 207, 0.4);
   --landing-drop-shadow: 0 0 350px var(--landing-drop-shadow-color);
-
-  // --color-primary: #001bcf;
-  // --color-primary-light: #0083cf;
-  // --color-primary-dark: #000417;
-  // --landing-drop-shadow-color: rgba(0, 47, 255, 0.6);
-  // --landing-drop-shadow: 0 0 350px var(--landing-drop-shadow-color);
-  // --color-font-default: #ffffff;
-  // --color-font-dark: #000000;
-  // --placeholder-color: rgba(191, 191, 191, 0.5);
-
-  // --color-primary: #000417;
-
   --color-font-dark: #000000;
-
-  // --color-primary: #ffffff;
-  // --color-primary-light: #ffffff;
-  // --color-primary-dark: #ffffff;
-  // --landing-drop-shadow-color: #553e3e;
-  // --landing-drop-shadow: 0 0 350px var(--landing-drop-shadow-color);
-  // --color-font-default: #001bcf;
-  // --color-font-dark: #000000;
-  // --placeholder-color: rgba(191, 191, 191, 0.5);
 
   --curvy-hue-shift-1: 160deg;
   --curvy-hue-shift-2: 0deg;
