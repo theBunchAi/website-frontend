@@ -66,36 +66,19 @@
           width: 100%;
           height: auto;
           aspect-ratio: 1;
-          transform: translateX(0) translateY(50%);
+          transform: translateX(0) translateY(0%);
         }
         .card-content {
           width: 100%;
-          transform: translateX(0) translateY(50%);
-        }
-        &.active {
-          width: 100%;
-          .card-content {
-            transform: translateX(0) translateY(0);
-            opacity: 1;
-          }
-          .img-container {
-            transform: translateX(0) translateY(0);
-          }
+          transform: translateX(0) translateY(0%);
+          text-align: center;
         }
         &:nth-child(odd) {
           flex-direction: column;
         }
         &:nth-child(even) {
           .img-container {
-            transform: translateX(0) translateY(50%);
-          }
-          &.active {
-            .img-container {
-              transform: translateX(0) translateY(0);
-            }
-            .card-content {
-              transform: translateX(0) translateY(0);
-            }
+            transform: translateX(0) translateY(0%);
           }
         }
       }

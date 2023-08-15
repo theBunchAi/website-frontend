@@ -17,8 +17,8 @@ export default function EventCards({
     venue: item.venue,
   }));
 
-  const mapper = (event: EventCardProps, index: number) => (
-    <EventCard key={index} {...event} />
-  );
+  const mapper = (event: EventCardProps, index: number) => {
+    return <EventCard key={index} {...event} />;
+  };
   return <div id="event-cards">{events.map(mapper)}</div>;
 }

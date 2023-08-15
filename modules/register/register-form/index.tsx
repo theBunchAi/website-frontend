@@ -8,9 +8,9 @@ export default function RegisterForm({ eventName }: { eventName: string }) {
     formRef: formRef,
     gFormId: "1xr28zjlJvmfVKtgNW44fqXb4UI2rZUkxbnzFClnTFHg",
     links: [
-      { entryId: "1759689869", formId: "name" },
-      { entryId: "1859042591", formId: "mail" },
-      { entryId: "1651948340", formId: "number" },
+      { entryId: "1759689869", formId: "name", type: "text" },
+      { entryId: "1859042591", formId: "mail", type: "text" },
+      { entryId: "1651948340", formId: "number", type: "text" },
     ],
     extraEntries: [{ entryId: "237604300", value: eventName }],
   });

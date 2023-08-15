@@ -60,7 +60,7 @@ export default function EventCard(props: EventCardProps) {
               <div className="detail">
                 <BsFillCalendarDayFill className="icon" />
                 <span className="text">
-                  {`${date.getDay()} ${
+                  {`${date.getDate()} ${
                     months[date.getMonth()]
                   } ${date.getFullYear()}`}
                 </span>
@@ -79,13 +79,10 @@ export default function EventCard(props: EventCardProps) {
           <div className="desc-view">
             <p className="event-text">{description}</p>
             <Link
-              href={{
-                pathname: "/register",
-                query: {
-                  event: heading,
-                },
-              }}
+              href="https://forms.gle/zZReFhG4gNHREpkJA"
               className="register-link"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Register
             </Link>

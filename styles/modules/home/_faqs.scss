@@ -7,12 +7,22 @@
   gap: 30px;
   .faq-container {
     display: flex;
-    width: 90%;
+    width: 100%;
     gap: 50px;
     .faq {
+      margin-top: 5vh;
+      .faq-heading {
+        @media only screen and (min-width: 1000px) and (max-width: 1600px) {
+          min-height: 10vh;
+        }
+        @media only screen and (min-width: 900px) and (max-width: 1000px) {
+          min-height: 15vh;
+        }
+      }
       display: flex;
       flex-direction: column;
       gap: 20px;
+      width: 50%;
     }
   }
   @media only screen and (max-width: 900px) {
@@ -23,6 +33,9 @@
         flex-direction: column;
         gap: 40px;
         .faq {
+          .faq-heading {
+            min-height: auto;
+          }
           width: 100%;
           gap: 20px;
         }
