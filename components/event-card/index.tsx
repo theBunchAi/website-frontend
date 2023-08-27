@@ -84,7 +84,7 @@ export default function EventCard(props: EventCardProps) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Register
+              Request an Invite
             </Link>
           </div>
         </div>
