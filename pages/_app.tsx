@@ -26,18 +26,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         ></iframe>
       </noscript>
 
-      {"<!-- Google tag (gtag.js) -->"}
       <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-7L2RMX12CD"
       ></Script>
-      <script>
+      <Script id="ga-analaytics">
         {`window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-7L2RMX12CD');`}
-      </script>
+      </Script>
 
       <PageBackground />
       <Component {...pageProps} />
