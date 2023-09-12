@@ -27,10 +27,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </noscript>
 
       <Script
+        strategy="afterInteractive"
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-7L2RMX12CD"
       ></Script>
-      <Script id="ga-analaytics">
+      <Script id="ga-analaytics" strategy="afterInteractive">
         {`window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());

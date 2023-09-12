@@ -2,6 +2,7 @@ import { RiFacebookCircleFill, RiInstagramFill } from "react-icons/ri";
 import ImageContainer from "../image-container";
 
 export default function Footer() {
+  const email = "thebunch22@gmail.com";
   return (
     <footer id="main-footer">
       <ImageContainer
@@ -25,6 +26,15 @@ export default function Footer() {
           <RiInstagramFill />
         </a>
       </div>
+      <a
+        className="footer-mail"
+        href={`mailto:${email}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span>For any further queries, mail us at :</span>
+        <span>{email}</span>
+      </a>
     </footer>
   );
 }

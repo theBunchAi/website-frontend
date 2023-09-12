@@ -39,4 +39,23 @@
       }
     }
   }
+  .footer-mail {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+    text-shadow: 0 0 5px black;
+    transform: translateY(50%);
+
+    @media only screen and (max-width: 900px) {
+      font-size: 0.9rem;
+      transform: translateY(100%);
+    }
+    & > *:nth-of-type(2) {
+      font-weight: bold;
+    }
+  }
 }
