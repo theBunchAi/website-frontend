@@ -7,6 +7,7 @@ import PageBackground from "@/components/page-background";
 
 export default function App({ Component, pageProps }: AppProps) {
   const gaURLTag = "G-SL6RYF6MQS";
+  const gaURLTag2 = "G-TVR8M7HM7Y";
   return (
     <>
       <Script
@@ -20,6 +21,21 @@ export default function App({ Component, pageProps }: AppProps) {
           function gtag(){window?.dataLayer?.push(arguments);}
           gtag('js', new Date());
           gtag('config', '${gaURLTag}', {
+            page_path : window?.location?.pathname
+          });
+        `}
+      </Script>
+      <Script
+        async
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${gaURLTag2}`}
+      ></Script>
+      <Script id="g-script" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window?.dataLayer?.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${gaURLTag2}', {
             page_path : window?.location?.pathname
           });
         `}
