@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gaURLTag2}`}
       ></Script>
-      <Script id="g-script" strategy="afterInteractive">
+      <Script id="g-script2" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window?.dataLayer?.push(arguments);}
