@@ -6,19 +6,20 @@ import HowFooter from "@/components/how-footer";
 import PageBackground from "@/components/page-background";
 
 export default function App({ Component, pageProps }: AppProps) {
+  const gaURLTag = "G-SL6RYF6MQS";
   return (
     <>
       <Script
         async
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process?.env?.NEXT_PUBLIC_GA_URL_TAG}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${gaURLTag}`}
       ></Script>
       <Script id="g-script" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', '${process?.env?.NEXT_PUBLIC_GA_URL_TAG}');
+          gtag('config', '${gaURLTag}');
         `}
       </Script>
 
