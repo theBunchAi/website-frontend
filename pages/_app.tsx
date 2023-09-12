@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Script id="g-script" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
+          function gtag(){window?.dataLayer?.push(arguments);}
           gtag('js', new Date());
           gtag('config', '${gaURLTag}', {
             page_path : window?.location?.pathname
