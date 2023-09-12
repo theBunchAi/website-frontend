@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "next-sitemap --config next_sitemap.config.js"
+    "postbuild": "next-sitemap --config next_sitemap.config.js",
+    "godscript": "npm run build && git add . && git commit -m 'changes' && git push"
   },
   "dependencies": {
     "@hymns-of-web/use-easy-google-form": "^1.0.4",
