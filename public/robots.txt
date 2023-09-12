@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://thebunch.ai
+
+# Sitemaps
+Sitemap: https://thebunch.ai/sitemap.xml

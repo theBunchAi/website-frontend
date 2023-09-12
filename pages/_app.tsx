@@ -10,9 +10,10 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Script
         async
+        strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env?.NEXT_PUBLIC_GA_URL_TAG}`}
       ></Script>
-      <Script id="g-script">
+      <Script id="g-script" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
