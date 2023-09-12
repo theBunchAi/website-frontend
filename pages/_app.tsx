@@ -19,7 +19,9 @@ export default function App({ Component, pageProps }: AppProps) {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', '${gaURLTag}');
+          gtag('config', '${gaURLTag}', {
+            page_path : window?.location?.pathname
+          });
         `}
       </Script>
 
