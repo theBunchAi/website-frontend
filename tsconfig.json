@@ -28,7 +28,8 @@
       "@components/*": ["./components/*"],
       "@modules/*": ["./modules/*"],
       "@pages/*": ["./pages/*"],
-      "@hooks/*": ["./hooks/*"]
+      "@hooks/*": ["./hooks/*"],
+      "react": ["./node_modules/@types/react"]
     },
     "noPropertyAccessFromIndexSignature": false,
     "ignoreDeprecations": "5.0",
