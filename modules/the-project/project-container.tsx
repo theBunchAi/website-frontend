@@ -4,6 +4,9 @@ import ImageContainer from "@/components/image-container";
 import { projectData } from "./the-project-data";
 
 export default function TheProjectContainer() {
+  const mapper = (data: string, indx: number) => {
+    return <li key={indx}>{data}</li>;
+  };
   return (
     <div className="the-project-container">
       <HeroBannerCommon module="project" title="The Bucketlist Project" />
@@ -12,7 +15,14 @@ export default function TheProjectContainer() {
           return (
             <div key={index} className="para">
               <h3 className="question">{elem.question}</h3>
-              <p className="answer">{elem.answer}</p>
+              {typeof elem.answer === "string" ? (
+                <p
+                  className="answer"
+                  dangerouslySetInnerHTML={{ __html: elem.answer }}
+                ></p>
+              ) : (
+                <ol className="answer">{elem.answer.map(mapper)}</ol>
+              )}
             </div>
           );
         })}
