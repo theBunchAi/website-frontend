@@ -25,7 +25,11 @@
     "react-icons": "^4.10.1",
     "sharp": "^0.32.4"
   },
+  "resolutions": {
+    "@types/react": "^18"
+  },
   "devDependencies": {
+    "@types/react": "^18",
     "@tsconfig/esm": "^1.0.2",
     "@tsconfig/strictest": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
