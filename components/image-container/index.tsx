@@ -3,7 +3,9 @@
 import Image from "next/image";
 import type { ImageContainerProps } from "./types";
 
-export default function ImageContainer(props: ImageContainerProps) {
+export default function ImageContainer(
+  props: ImageContainerProps
+): JSX.Element {
   const { containerClassName, ...allOtherProps } = props;
   return (
     <div
