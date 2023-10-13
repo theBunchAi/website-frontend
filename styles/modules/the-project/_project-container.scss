@@ -1,0 +1,62 @@
+.the-project-container {
+  @import "./hero-banner";
+  .project-para-container {
+    width: 100vw;
+    padding: 0 var(--default-side-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .para {
+      margin: 5vh 0;
+      .question {
+        font-family: var(--font-subheading);
+        font-size: var(--size-font-subheading);
+        font-weight: 500;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        margin-bottom: 1.25vh;
+      }
+      .answer {
+        font-size: var(--size-font-deafult);
+        line-height: 2rem;
+        font-weight: 300;
+        text-align: justify;
+      }
+      &:nth-child(2) {
+        text-align: right;
+      }
+    }
+    .btn {
+      margin: 6vh 0;
+      width: fit-content;
+      text-decoration: none;
+      background-color: var(--color-font-default);
+      color: var(--color-font-dark);
+      display: block;
+      padding: 0.5rem 1.5rem;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      &:hover {
+        scale: 1.1;
+      }
+    }
+    .img-container {
+      z-index: 0;
+      position: absolute;
+      width: 50vw;
+      aspect-ratio: 1;
+      top: 50vh;
+      right: 0;
+      z-index: -1;
+      transform: translate(50%, -20%);
+      filter: hue-rotate(280deg);
+      animation: fade-link-text 1s linear 0s normal forwards,
+        view-div 1s linear 1s normal forwards;
+      @media only screen and (max-width: 900px) {
+        & {
+          top: 35vh;
+        }
+      }
+    }
+  }
+}

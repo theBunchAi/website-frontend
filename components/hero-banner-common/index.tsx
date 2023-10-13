@@ -50,10 +50,13 @@ export default function HeroBannerCommon({
       <h1 className="hero-banner-heading">{title}</h1>
       <div className="navigation-container">
         <Link href="/" className="home-link nav-link">
-          Home
+          <span>Home</span>
         </Link>
         <Link href="/events" className="home-link nav-link">
-          Events
+          <span>Events</span>
+        </Link>
+        <Link href="/thebucketlistproject" className="home-link nav-link">
+          <span>The Bucketlist Project</span>
         </Link>
       </div>
     </div>
