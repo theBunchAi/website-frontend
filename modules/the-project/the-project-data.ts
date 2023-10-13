@@ -26,7 +26,8 @@ the activity involved involves a cost.`,
       "Community: Build connections with local explorers who share your enthusiasm for the city's\
     experiences.",
       "Inspiration: Discover fresh ideas and inspirations as you explore the bucket lists\
-    of fellow adventurers. Support: Receive guidance, insights, and camaraderie from like-minded\
+    of fellow adventurers.",
+      "Support: Receive guidance, insights, and camaraderie from like-minded\
     individuals as you tick off items on your Bangalore bucket list.",
     ],
   },
