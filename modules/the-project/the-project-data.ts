@@ -15,7 +15,7 @@ rel="noopener noreferrer">TheBunch.ai Instagram page</a> on the upcoming
 Saturday and will be up for voting.
 If your bucketlist item gets the most polls, TheBunch.ai team will work on planning \
 the event and get in touch with you and connect you to other likeminded people who are \
-interested to participate in fulfilling your bucketlist item. TheBunch.ai item will be charging a fee if \
+interested to participate in fulfilling your bucketlist item. TheBunch.ai team will be charging a fee if \
 the activity involved involves a cost.`,
   },
   {
