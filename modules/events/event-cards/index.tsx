@@ -10,6 +10,7 @@ export default function EventCards({
     heading: item.eventName,
     date: new Date(item.eventDate),
     description: item.longDescription,
+    formLink: item.formLink,
     img: {
       src: item.eventPoster.url,
       alt: item.eventName,

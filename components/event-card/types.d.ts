@@ -7,5 +7,6 @@ export interface EventCardProps {
   description: string;
   date: Date;
   venue: string;
+  formLink: string;
   barCodeMsg?: string;
 }

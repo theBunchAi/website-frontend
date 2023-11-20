@@ -3,6 +3,7 @@ export interface eventDataType {
   eventDate: string;
   longDescription: string;
   venue: string;
+  formLink: string;
   eventPoster: {
     url: string;
   };

@@ -19,6 +19,7 @@ export default function EventCard(props: EventCardProps) {
     description = "lorem ipsum",
     date,
     venue,
+    formLink,
     barCodeMsg = heading,
   } = props;
   const { src: imgSrc = "/", alt: imgAlt = "" } = img;
@@ -49,6 +50,7 @@ export default function EventCard(props: EventCardProps) {
     "November",
     "December",
   ];
+
   return (
     <div className={"event-card" + (isActive ? " active" : "")}>
       <ImageContainer src={imgSrc} alt={imgAlt} />
@@ -79,7 +81,7 @@ export default function EventCard(props: EventCardProps) {
           <div className="desc-view">
             <p className="event-text">{description}</p>
             <Link
-              href="https://forms.gle/zZReFhG4gNHREpkJA"
+              href={formLink}
               className="register-link"
               target="_blank"
               rel="noopener noreferrer"

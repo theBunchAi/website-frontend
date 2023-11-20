@@ -8,6 +8,7 @@ export const briefEventData = gql`
         eventDate
         longDescription
         venue
+        formLink
         eventPoster {
           url
         }

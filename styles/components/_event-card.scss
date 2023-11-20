@@ -1,5 +1,5 @@
 .event-card {
-  --size-font-heading-small: 3rem;
+  --size-font-heading-small: clamp(1rem, 2vw, 2.5rem);
   --card-default-transition: all 0.4s ease-in-out, transform 0.4s ease-in-out;
   width: 900px;
   height: 340px;
